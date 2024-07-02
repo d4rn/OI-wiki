@@ -246,7 +246,7 @@ author: inkydragon, TravorLZH, YOYO-UIAT, wood3, shuzhouliu, Mr-Python-in-China,
                 if not not_prime[i]:
                     pri.append(i)
                 for pri_j in pri:
-                    if i * pri_j > n:
+                    if i * pri_j >= n:
                         break
                     not_prime[i * pri_j] = True
                     if i % pri_j == 0:
